@@ -8,6 +8,7 @@ import frFR from 'antd/locale/fr_FR'
 import jaJP from 'antd/locale/ja_JP'
 import ptPT from 'antd/locale/pt_PT'
 import ruRU from 'antd/locale/ru_RU'
+import viVN from 'antd/locale/vi_VN'
 import zhCN from 'antd/locale/zh_CN'
 import zhTW from 'antd/locale/zh_TW'
 import { FC, PropsWithChildren } from 'react'
@@ -53,6 +54,8 @@ function getAntdLocale(language: LanguageVarious) {
       return zhTW
     case 'en-US':
       return enUS
+    case 'vi-VN':
+      return viVN
     case 'ru-RU':
       return ruRU
     case 'ja-JP':

@@ -68,7 +68,7 @@ const HomeWindow: FC = () => {
   }, [readClipboard])
 
   useEffect(() => {
-    i18n.changeLanguage(language || navigator.language || 'en-US')
+    i18n.changeLanguage(language || 'vi-VN')
   }, [language])
 
   const onCloseWindow = () => window.api.miniWindow.hide()

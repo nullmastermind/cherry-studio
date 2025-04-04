@@ -53,7 +53,7 @@ export function useAppInit() {
   }, [proxyUrl, proxyMode])
 
   useEffect(() => {
-    i18n.changeLanguage(language || navigator.language || 'en-US')
+    void i18n.changeLanguage(language || 'vi-VN')
   }, [language])
 
   useEffect(() => {

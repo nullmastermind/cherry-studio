@@ -6,12 +6,12 @@ import ZhCn from '../../renderer/src/i18n/locales/zh-cn.json'
 import ZhTw from '../../renderer/src/i18n/locales/zh-tw.json'
 
 const locales = {
+  'vi-VN': ViVN,
   'en-US': EnUs,
   'zh-CN': ZhCn,
   'zh-TW': ZhTw,
   'ja-JP': JaJP,
-  'ru-RU': RuRu,
-  'vi-VN': ViVN
+  'ru-RU': RuRu
 }
 
 export { locales }

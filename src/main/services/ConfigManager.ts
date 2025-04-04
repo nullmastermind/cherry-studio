@@ -14,7 +14,7 @@ export class ConfigManager {
   }
 
   getLanguage(): LanguageVarious {
-    const locale = Object.keys(locales).includes(app.getLocale()) ? app.getLocale() : 'en-US'
+    const locale = Object.keys(locales).includes(app.getLocale()) ? app.getLocale() : 'vi-VN'
     return this.store.get('language', locale) as LanguageVarious
   }
 
