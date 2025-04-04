@@ -2,8 +2,7 @@ import { useTheme } from '@renderer/context/ThemeProvider'
 import { useSettings } from '@renderer/hooks/useSettings'
 import i18n from '@renderer/i18n'
 import { useAppDispatch } from '@renderer/store'
-import { setLanguage } from '@renderer/store/settings'
-import { setProxyMode, setProxyUrl as _setProxyUrl } from '@renderer/store/settings'
+import { setLanguage, setProxyMode, setProxyUrl as _setProxyUrl } from '@renderer/store/settings'
 import { LanguageVarious } from '@renderer/types'
 import { isValidProxyUrl } from '@renderer/utils'
 import { Input, Select, Space, Switch } from 'antd'
@@ -95,15 +94,15 @@ const GeneralSettings: FC = () => {
 
   const languagesOptions: { value: LanguageVarious; label: string; flag: string }[] = [
     { value: 'vi-VN', label: 'Tiếng Việt', flag: '🇻🇳' },
-    { value: 'zh-CN', label: '中文', flag: '🇨🇳' },
-    { value: 'zh-TW', label: '中文（繁体）', flag: '🇭🇰' },
-    { value: 'en-US', label: 'English', flag: '🇺🇸' },
-    { value: 'ja-JP', label: '日本語', flag: '🇯🇵' },
-    { value: 'ru-RU', label: 'Русский', flag: '🇷🇺' },
-    { value: 'el-GR', label: 'Ελληνικά', flag: '🇬🇷' },
-    { value: 'es-ES', label: 'Español', flag: '🇪🇸' },
-    { value: 'fr-FR', label: 'Français', flag: '🇫🇷' },
-    { value: 'pt-PT', label: 'Português', flag: '🇵🇹' }
+    // { value: 'zh-CN', label: '中文', flag: '🇨🇳' },
+    // { value: 'zh-TW', label: '中文（繁体）', flag: '🇭🇰' },
+    { value: 'en-US', label: 'English', flag: '🇺🇸' }
+    // { value: 'ja-JP', label: '日本語', flag: '🇯🇵' },
+    // { value: 'ru-RU', label: 'Русский', flag: '🇷🇺' },
+    // { value: 'el-GR', label: 'Ελληνικά', flag: '🇬🇷' },
+    // { value: 'es-ES', label: 'Español', flag: '🇪🇸' },
+    // { value: 'fr-FR', label: 'Français', flag: '🇫🇷' },
+    // { value: 'pt-PT', label: 'Português', flag: '🇵🇹' }
   ]
 
   return (
