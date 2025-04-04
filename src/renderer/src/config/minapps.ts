@@ -1,5 +1,3 @@
-import BaiduAiAppLogo from '@renderer/assets/images/apps/baidu-ai.png?url'
-import BaicuanAppLogo from '@renderer/assets/images/apps/baixiaoying.webp?url'
 import CozeAppLogo from '@renderer/assets/images/apps/coze.webp?url'
 import DifyAppLogo from '@renderer/assets/images/apps/dify.svg?url'
 import GeminiAppLogo from '@renderer/assets/images/apps/gemini.png?url'
@@ -12,12 +10,11 @@ import PerplexityAppLogo from '@renderer/assets/images/apps/perplexity.webp?url'
 import PoeAppLogo from '@renderer/assets/images/apps/poe.webp?url'
 import QwenlmAppLogo from '@renderer/assets/images/apps/qwenlm.webp?url'
 import YouLogo from '@renderer/assets/images/apps/you.jpg?url'
-import TencentYuanbaoAppLogo from '@renderer/assets/images/apps/yuanbao.webp?url'
 import ClaudeAppLogo from '@renderer/assets/images/models/claude.png?url'
 import DeepSeekProviderLogo from '@renderer/assets/images/providers/deepseek.png?url'
+import GoogleAiStudioProviderLogo from '@renderer/assets/images/providers/google-ai-studio-logo.png?url'
 import LLMAIVNLogo from '@renderer/assets/images/providers/llmaivn.png?url'
 import OpenAiProviderLogo from '@renderer/assets/images/providers/openai.png?url'
-import GoogleAiStudioProviderLogo from '@renderer/assets/images/providers/google-ai-studio-logo.png?url'
 import { MinAppType } from '@renderer/types'
 
 export const DEFAULT_MIN_APPS: MinAppType[] = [
@@ -84,12 +81,12 @@ export const DEFAULT_MIN_APPS: MinAppType[] = [
   //   url: 'https://kimi.moonshot.cn/',
   //   logo: KimiAppLogo
   // },
-  {
-    id: 'baichuan',
-    name: 'Baixiao Ying',
-    url: 'https://ying.baichuan-ai.com/chat',
-    logo: BaicuanAppLogo
-  },
+  // {
+  //   id: 'baichuan',
+  //   name: 'Baixiao Ying',
+  //   url: 'https://ying.baichuan-ai.com/chat',
+  //   logo: BaicuanAppLogo
+  // },
   // {
   //   id: 'dashscope',
   //   name: '通义千问',
@@ -127,12 +124,12 @@ export const DEFAULT_MIN_APPS: MinAppType[] = [
   //   url: 'https://chat.groq.com/',
   //   logo: GroqProviderLogo
   // },
-  {
-    id: 'baidu-ai-chat',
-    name: 'Baidu AI',
-    logo: BaiduAiAppLogo,
-    url: 'https://yiyan.baidu.com/'
-  },
+  // {
+  //   id: 'baidu-ai-chat',
+  //   name: 'Baidu AI',
+  //   logo: BaiduAiAppLogo,
+  //   url: 'https://yiyan.baidu.com/'
+  // },
   // {
   //   id: 'baidu-ai-search',
   //   name: '百度AI搜索',
@@ -143,13 +140,13 @@ export const DEFAULT_MIN_APPS: MinAppType[] = [
   //     padding: 5
   //   }
   // },
-  {
-    id: 'tencent-yuanbao',
-    name: 'Tencent Yuanbao',
-    logo: TencentYuanbaoAppLogo,
-    url: 'https://yuanbao.tencent.com/chat',
-    bodered: true
-  },
+  // {
+  //   id: 'tencent-yuanbao',
+  //   name: 'Tencent Yuanbao',
+  //   logo: TencentYuanbaoAppLogo,
+  //   url: 'https://yuanbao.tencent.com/chat',
+  //   bodered: true
+  // },
   // {
   //   id: 'sensetime-chat',
   //   name: '商量',
