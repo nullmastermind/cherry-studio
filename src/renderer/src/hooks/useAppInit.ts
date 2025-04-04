@@ -5,6 +5,7 @@ import db from '@renderer/databases'
 import i18n from '@renderer/i18n'
 import { useAppDispatch } from '@renderer/store'
 import { setAvatar, setFilesPath, setResourcesPath, setUpdateState } from '@renderer/store/runtime'
+import { setLanguage } from '@renderer/store/settings'
 import { delay, runAsyncFunction } from '@renderer/utils'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect } from 'react'
@@ -102,4 +103,15 @@ export function useAppInit() {
       document.head.appendChild(style)
     }
   }, [customCss])
+
+  useEffect(() => {
+    const currentLanguage = localStorage.getItem('language')
+    if (!currentLanguage) {
+      const value = 'vi-VN'
+      dispatch(setLanguage(value))
+      localStorage.setItem('language', value)
+      window.api.setLanguage(value)
+      void i18n.changeLanguage(value)
+    }
+  }, [dispatch])
 }
