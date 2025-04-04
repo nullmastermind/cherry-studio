@@ -1,9 +1,6 @@
 import { ZOOM_SHORTCUTS } from '@shared/config/constant'
 import { LanguageVarious, Shortcut, ThemeMode } from '@types'
-import { app } from 'electron'
 import Store from 'electron-store'
-
-import { locales } from '../utils/locales'
 
 export class ConfigManager {
   private store: Store
@@ -14,12 +11,13 @@ export class ConfigManager {
   }
 
   getLanguage(): LanguageVarious {
-    const locale = Object.keys(locales).includes(app.getLocale()) ? app.getLocale() : 'vi-VN'
+    // const locale = Object.keys(locales).includes(app.getLocale()) ? app.getLocale() : 'vi-VN'
+    const locale = 'vi-VN'
     return this.store.get('language', locale) as LanguageVarious
   }
 
-  setLanguage(theme: LanguageVarious) {
-    this.store.set('language', theme)
+  setLanguage(language: LanguageVarious) {
+    this.store.set('language', language)
   }
 
   getTheme(): ThemeMode {
