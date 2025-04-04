@@ -12,12 +12,10 @@ import StyleSheetManager from './context/StyleSheetManager'
 import { SyntaxHighlighterProvider } from './context/SyntaxHighlighterProvider'
 import { ThemeProvider } from './context/ThemeProvider'
 import NavigationHandler from './handler/NavigationHandler'
-import AgentsPage from './pages/agents/AgentsPage'
 import AppsPage from './pages/apps/AppsPage'
 import FilesPage from './pages/files/FilesPage'
 import HomePage from './pages/home/HomePage'
 import KnowledgePage from './pages/knowledge/KnowledgePage'
-import PaintingsPage from './pages/paintings/PaintingsPage'
 import SettingsPage from './pages/settings/SettingsPage'
 import TranslatePage from './pages/translate/TranslatePage'
 
@@ -35,8 +33,8 @@ function App(): React.ReactElement {
                     <Sidebar />
                     <Routes>
                       <Route path="/" element={<HomePage />} />
-                      <Route path="/agents" element={<AgentsPage />} />
-                      <Route path="/paintings" element={<PaintingsPage />} />
+                      {/*<Route path="/agents" element={<AgentsPage />} />*/}
+                      {/*<Route path="/paintings" element={<PaintingsPage />} />*/}
                       <Route path="/translate" element={<TranslatePage />} />
                       <Route path="/files" element={<FilesPage />} />
                       <Route path="/knowledge" element={<KnowledgePage />} />

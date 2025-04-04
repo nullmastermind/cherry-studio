@@ -2,6 +2,11 @@ import i18n from '@renderer/i18n'
 
 export const TranslateLanguageOptions = [
   {
+    value: 'vietnamese',
+    label: i18n.t('languages.vietnamese'),
+    emoji: '🇻🇳'
+  },
+  {
     value: 'english',
     label: i18n.t('languages.english'),
     emoji: '🇬🇧'

@@ -365,7 +365,7 @@
       },
       "add_directory": "Thêm Thư mục",
       "add_file": "Thêm File",
-      "add_note": "Thêm Ghi chú", 
+      "add_note": "Thêm Ghi chú",
       "add_sitemap": "Thêm Sitemap",
       "add_url": "Thêm URL",
       "cancel_index": "Hủy đánh index",
@@ -440,7 +440,8 @@
       "korean": "Tiếng Hàn",
       "portuguese": "Tiếng Bồ Đào Nha",
       "russian": "Tiếng Nga",
-      "spanish": "Tiếng Tây Ban Nha"
+      "spanish": "Tiếng Tây Ban Nha",
+      "vietnamese": "Tiếng Việt"
     },
     "lmstudio": {
       "keep_alive_time.description": "Thời gian (tính bằng phút) để giữ kết nối hoạt động, mặc định là 5 phút nha.",
@@ -562,7 +563,7 @@
         "rightclick_copyurl": "Click chuột phải để copy URL"
       },
       "sidebar.add.title": "Ghim vào thanh bên",
-      "sidebar.remove.title": "Bỏ ghim khỏi thanh bên", 
+      "sidebar.remove.title": "Bỏ ghim khỏi thanh bên",
       "sidebar.close.title": "Đóng",
       "sidebar.closeall.title": "Đóng tất cả",
       "sidebar.hide.title": "Ẩn MinApp",
@@ -575,13 +576,13 @@
       "feature": {
         "chat": "Trả lời câu hỏi này",
         "explanation": "Giải thích",
-        "summary": "Tóm tắt nội dung", 
+        "summary": "Tóm tắt nội dung",
         "translate": "Dịch văn bản"
       },
       "footer": {
         "copy_last_message": "Nhấn C để copy",
         "backspace_clear": "Nhấn Backspace để xóa",
-        "esc": "Nhấn ESC để {{action}}", 
+        "esc": "Nhấn ESC để {{action}}",
         "esc_back": "quay lại",
         "esc_close": "đóng"
       },
@@ -609,7 +610,7 @@
       "parameter_name": "Tên Parameter",
       "parameter_type": {
         "boolean": "Boolean",
-        "json": "JSON", 
+        "json": "JSON",
         "number": "Số",
         "string": "Text"
       },
@@ -649,7 +650,7 @@
       "guidance_scale": "Guidance Scale",
       "guidance_scale_tip": "Classifier Free Guidance. Điều chỉnh mức độ model tuân theo prompt của bạn khi tìm kiếm hình ảnh liên quan",
       "image.size": "Kích thước hình",
-      "inference_steps": "Inference Steps", 
+      "inference_steps": "Inference Steps",
       "inference_steps_tip": "Số bước xử lý. Càng nhiều bước thì chất lượng càng cao nhưng thời gian chờ cũng lâu hơn nha",
       "negative_prompt": "Negative Prompt",
       "negative_prompt_tip": "Mô tả những thứ bạn không muốn xuất hiện trong hình",
@@ -1230,7 +1231,7 @@
       "title": "Cài đặt",
       "topic.position": "Vị trí chủ đề",
       "topic.position.left": "Trái",
-      "topic.position.right": "Phải", 
+      "topic.position.right": "Phải",
       "topic.show.time": "Hiện thời gian chủ đề",
       "tray.onclose": "Thu nhỏ xuống khay khi đóng",
       "tray.show": "Hiện biểu tượng khay",
