@@ -987,6 +987,7 @@
       "input.target_language.english": "English",
       "input.target_language.japanese": "Japanese",
       "input.target_language.russian": "Russian",
+      "input.target_language.vietnamese": "Vietnamese",
       "launch.onboot": "Start Automatically on Boot",
       "launch.title": "Launch",
       "launch.totray": "Minimize to Tray on Launch",
