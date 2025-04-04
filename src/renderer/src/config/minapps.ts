@@ -1,7 +1,9 @@
 import CozeAppLogo from '@renderer/assets/images/apps/coze.webp?url'
 import DifyAppLogo from '@renderer/assets/images/apps/dify.svg?url'
+import FalAIProviderLogo from '@renderer/assets/images/apps/fal-ai.png?url'
 import GeminiAppLogo from '@renderer/assets/images/apps/gemini.png?url'
 import GithubCopilotLogo from '@renderer/assets/images/apps/github-copilot.webp?url'
+import GoogleTranslateProviderLogo from '@renderer/assets/images/apps/google-translate-logo.png?url'
 import GrokAppLogo from '@renderer/assets/images/apps/grok.png?url'
 import HuggingChatLogo from '@renderer/assets/images/apps/huggingchat.svg?url'
 import MonicaLogo from '@renderer/assets/images/apps/monica.webp?url'
@@ -358,7 +360,7 @@ export const DEFAULT_MIN_APPS: MinAppType[] = [
     name: 'You',
     logo: YouLogo,
     url: 'https://you.com/'
-  }
+  },
   // {
   //   id: 'zhihu',
   //   name: '知乎直答',
@@ -366,4 +368,16 @@ export const DEFAULT_MIN_APPS: MinAppType[] = [
   //   url: 'https://zhida.zhihu.com/',
   //   bodered: true
   // }
+  {
+    id: 'fal-ai',
+    name: 'fal.ai',
+    logo: FalAIProviderLogo,
+    url: 'https://fal.ai/'
+  },
+  {
+    id: 'google-translate',
+    name: 'Google Translate',
+    logo: GoogleTranslateProviderLogo,
+    url: 'https://translate.google.com/'
+  }
 ]
