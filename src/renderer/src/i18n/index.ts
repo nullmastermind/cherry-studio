@@ -7,6 +7,7 @@ import jaJP from './locales/ja-jp.json'
 import ruRU from './locales/ru-ru.json'
 import zhCN from './locales/zh-cn.json'
 import zhTW from './locales/zh-tw.json'
+import viVN from './locales/vi-vn.json'
 // Machine translation
 import elGR from './translate/el-gr.json'
 import esES from './translate/es-es.json'
@@ -14,6 +15,7 @@ import frFR from './translate/fr-fr.json'
 import ptPT from './translate/pt-pt.json'
 
 const resources = {
+  'vi-VN': viVN,
   'el-GR': elGR,
   'en-US': enUS,
   'es-ES': esES,
@@ -26,7 +28,7 @@ const resources = {
 }
 
 export const getLanguage = () => {
-  return localStorage.getItem('language') || navigator.language || 'en-US'
+  return localStorage.getItem('language') || 'vi-VN'
 }
 
 export const getLanguageCode = () => {
@@ -36,7 +38,7 @@ export const getLanguageCode = () => {
 i18n.use(initReactI18next).init({
   resources,
   lng: getLanguage(),
-  fallbackLng: 'en-US',
+  fallbackLng: 'vi-VN',
   interpolation: {
     escapeValue: false
   }
