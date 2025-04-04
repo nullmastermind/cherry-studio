@@ -365,6 +365,12 @@ export function getModelLogo(modelId: string) {
 export const SYSTEM_MODELS: Record<string, Model[]> = {
   llmaivn: [
     {
+      id: 'openai:gpt-4o-mini',
+      provider: 'llmaivn',
+      name: 'gpt-4o-mini',
+      group: 'openai'
+    },
+    {
       id: 'openai:gpt-4o',
       provider: 'llmaivn',
       name: 'gpt-4o',
@@ -380,12 +386,6 @@ export const SYSTEM_MODELS: Record<string, Model[]> = {
       id: 'openai:o3-mini-think-exp',
       provider: 'llmaivn',
       name: 'o3-mini-think-exp',
-      group: 'openai'
-    },
-    {
-      id: 'openai:gpt-4o-mini',
-      provider: 'llmaivn',
-      name: 'gpt-4o-mini',
       group: 'openai'
     },
     {
