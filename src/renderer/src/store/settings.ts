@@ -111,7 +111,7 @@ const initialState: SettingsState = {
   showTopics: true,
   sendMessageShortcut: 'Enter',
   language: navigator.language as LanguageVarious,
-  targetLanguage: 'english' as TranslateLanguageVarious,
+  targetLanguage: 'vietnamese' as TranslateLanguageVarious,
   proxyMode: 'system',
   proxyUrl: undefined,
   userName: '',

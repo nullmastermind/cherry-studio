@@ -497,11 +497,12 @@ const SettingsTab: FC<Props> = (props) => {
         <SettingRow>
           <SettingRowTitleSmall>{t('settings.input.target_language')}</SettingRowTitleSmall>
           <StyledSelect
-            defaultValue={'english' as TranslateLanguageVarious}
+            defaultValue={'vietnamese' as TranslateLanguageVarious}
             size="small"
             value={targetLanguage}
             menuItemSelectedIcon={<CheckOutlined />}
             options={[
+              { value: 'vietnamese', label: t('settings.input.target_language.vietnamese') },
               { value: 'chinese', label: t('settings.input.target_language.chinese') },
               { value: 'chinese-traditional', label: t('settings.input.target_language.chinese-traditional') },
               { value: 'english', label: t('settings.input.target_language.english') },
