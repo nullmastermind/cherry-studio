@@ -423,6 +423,12 @@ export const SYSTEM_MODELS: Record<string, Model[]> = {
       provider: 'llmaivn',
       name: 'gemini-2.5-pro-exp-03-25',
       group: 'google'
+    },
+    {
+      id: 'deepseek:deepseek-reasoner',
+      provider: 'llmaivn',
+      name: 'deepseek-reasoner',
+      group: 'deepseek'
     }
   ],
   aihubmix: [
