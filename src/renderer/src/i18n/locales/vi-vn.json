@@ -682,6 +682,7 @@
       "title": "Bạn là một trợ lý giỏi trò chuyện nè. Nhiệm vụ của bạn là tóm tắt cuộc trò chuyện của người dùng thành một title ngắn gọn không quá 10 ký tự, phải phù hợp với ngôn ngữ chính của họ và không dùng dấu câu hay ký tự đặc biệt nha"
     },
     "provider": {
+      "llmaivn": "llm.ai.vn",
       "aihubmix": "AiHubMix",
       "alayanew": "Alaya NeW",
       "anthropic": "Anthropic",

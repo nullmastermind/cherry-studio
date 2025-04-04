@@ -20,6 +20,7 @@ import GroqProviderLogo from '@renderer/assets/images/providers/groq.png'
 import HyperbolicProviderLogo from '@renderer/assets/images/providers/hyperbolic.png'
 import InfiniProviderLogo from '@renderer/assets/images/providers/infini.png'
 import JinaProviderLogo from '@renderer/assets/images/providers/jina.png'
+import LLMAIVNProviderLogo from '@renderer/assets/images/providers/llmaivn.png'
 import LMStudioProviderLogo from '@renderer/assets/images/providers/lmstudio.png'
 import MinimaxProviderLogo from '@renderer/assets/images/providers/minimax.png'
 import MistralProviderLogo from '@renderer/assets/images/providers/mistral.png'
@@ -69,6 +70,7 @@ const PROVIDER_LOGO_MAP = {
   github: GithubProviderLogo,
   copilot: GithubProviderLogo,
   ocoolai: OcoolAiProviderLogo,
+  llmaivn: LLMAIVNProviderLogo,
   together: TogetherProviderLogo,
   fireworks: FireworksProviderLogo,
   zhinao: ZhinaoProviderLogo,

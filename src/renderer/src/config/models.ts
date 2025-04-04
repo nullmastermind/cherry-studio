@@ -363,6 +363,68 @@ export function getModelLogo(modelId: string) {
 }
 
 export const SYSTEM_MODELS: Record<string, Model[]> = {
+  llmaivn: [
+    {
+      id: 'openai:gpt-4o',
+      provider: 'llmaivn',
+      name: 'gpt-4o',
+      group: 'openai'
+    },
+    {
+      id: 'openai:o3-mini',
+      provider: 'llmaivn',
+      name: 'o3-mini',
+      group: 'openai'
+    },
+    {
+      id: 'openai:o3-mini-think-exp',
+      provider: 'llmaivn',
+      name: 'o3-mini-think-exp',
+      group: 'openai'
+    },
+    {
+      id: 'openai:gpt-4o-mini',
+      provider: 'llmaivn',
+      name: 'gpt-4o-mini',
+      group: 'openai'
+    },
+    {
+      id: 'anthropic:3.7-sonnet',
+      provider: 'llmaivn',
+      name: 'claude-3.7-sonnet',
+      group: 'anthropic'
+    },
+    {
+      id: 'anthropic:3.7-sonnet-thinking',
+      provider: 'llmaivn',
+      name: 'claude-3.7-sonnet-thinking',
+      group: 'anthropic'
+    },
+    {
+      id: 'anthropic:3.5-sonnet',
+      provider: 'llmaivn',
+      name: 'claude-3.5-sonnet',
+      group: 'anthropic'
+    },
+    {
+      id: 'anthropic:3.5-sonnet-think-exp',
+      provider: 'llmaivn',
+      name: 'claude-3.5-sonnet-think-exp',
+      group: 'anthropic'
+    },
+    {
+      id: 'anthropic:3.5-haiku',
+      provider: 'llmaivn',
+      name: 'claude-3.5-haiku',
+      group: 'anthropic'
+    },
+    {
+      id: 'gemini:gemini-2.5-pro-exp-03-25',
+      provider: 'llmaivn',
+      name: 'gemini-2.5-pro-exp-03-25',
+      group: 'google'
+    }
+  ],
   aihubmix: [
     {
       id: 'gpt-4o',
@@ -2142,6 +2204,10 @@ export function isVisionModel(model: Model): boolean {
     return VISION_REGEX.test(model.name) || model.type?.includes('vision') || false
   }
 
+  if (model.provider === 'llmaivn') {
+    if (!(model.id.includes('3.5-haiku') || model.name.includes('3-5-haiku'))) return true
+  }
+
   return VISION_REGEX.test(model.id) || model.type?.includes('vision') || false
 }
 
@@ -2176,6 +2242,10 @@ export function isReasoningModel(model?: Model): boolean {
 
   if (model.id.includes('gemini-2.5-pro-exp')) {
     return true
+  }
+
+  if (model.provider === 'llmaivn') {
+    if (model.id.includes('-think-exp')) return true
   }
 
   return REASONING_REGEX.test(model.id) || model.type?.includes('reasoning') || false

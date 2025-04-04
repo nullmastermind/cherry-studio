@@ -26,6 +26,16 @@ export interface LlmState {
 
 export const INITIAL_PROVIDERS: Provider[] = [
   {
+    id: 'llmaivn',
+    name: 'llm.ai.vn',
+    type: 'openai',
+    apiKey: '',
+    apiHost: 'https://api.sv2.llm.ai.vn',
+    models: SYSTEM_MODELS.llmaivn,
+    isSystem: true,
+    enabled: true
+  },
+  {
     id: 'silicon',
     name: 'Silicon',
     type: 'openai',
@@ -33,7 +43,7 @@ export const INITIAL_PROVIDERS: Provider[] = [
     apiHost: 'https://api.siliconflow.cn',
     models: SYSTEM_MODELS.silicon,
     isSystem: true,
-    enabled: true
+    enabled: false
   },
   {
     id: 'aihubmix',
@@ -55,16 +65,16 @@ export const INITIAL_PROVIDERS: Provider[] = [
     isSystem: true,
     enabled: false
   },
-  {
-    id: 'ocoolai',
-    name: 'ocoolAI',
-    type: 'openai',
-    apiKey: '',
-    apiHost: 'https://api.ocoolai.com',
-    models: SYSTEM_MODELS.ocoolai,
-    isSystem: true,
-    enabled: false
-  },
+  // {
+  //   id: 'ocoolai',
+  //   name: 'ocoolAI',
+  //   type: 'openai',
+  //   apiKey: '',
+  //   apiHost: 'https://api.ocoolai.com',
+  //   models: SYSTEM_MODELS.ocoolai,
+  //   isSystem: true,
+  //   enabled: false
+  // },
   {
     id: 'openrouter',
     name: 'OpenRouter',
